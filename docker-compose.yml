@@ -1,0 +1,22 @@
+version: "3"
+services:
+  app:
+    container_name: deploy
+    build:
+      context: .
+    volumes:
+      - "maven-cached:/root/.m2"
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      - cassandra
+    restart: always
+  cassandra:
+    image: cassandra:3.11
+    volumes:
+      - "cassandra-db:/var/lib/cassandra"
+    ports:
+      - "127.0.0.1:9042:9042"
+volumes:
+  maven-cached:
+  cassandra-db:
