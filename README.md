@@ -18,7 +18,7 @@ or define parallel garbage collection, and other configurations in default confi
 
 * ##### Run project on local environment 
 
-To run the project in local environment we need just uncomment the line in `src/main/resources/application.properties` as show below: 
+To run the project in local environment we need just uncomment the line in `src/main/resources/application.properties` as shows below: 
 ```properties
 spring.profiles.active=dev
 #spring.profiles.active=keyspaces
@@ -26,7 +26,7 @@ spring.profiles.active=dev
 
 * ##### Run project with Amazon Keyspaces
 
-To run the project with Amazon Keyspace we need uncomment the line in `src/main/resources/application.properties` as show below:
+To run the project with Amazon Keyspace we need uncomment the line in `src/main/resources/application.properties` as shows below:
 ```properties
 #spring.profiles.active=dev
 spring.profiles.active=keyspaces
