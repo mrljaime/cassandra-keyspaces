@@ -86,9 +86,8 @@ Content-Type: application/json
 
 {"email":"jaime@bade.osmos.mx"}
 ###< Create some user (wihout unique restriction in email) ###
-```
 
-```http request
+
 ###> Get users list ###
 GET http://127.0.0.1:8080/api/1.0/users/
 Accept: application/json
