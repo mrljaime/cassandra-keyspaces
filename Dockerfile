@@ -15,3 +15,5 @@ WORKDIR /opt/cassandra-keyspaces
 COPY --from=build /opt/cassandra-keyspaces/target/cassandra-keyspaces-0.0.1.jar ./
 
 ENTRYPOINT ["java", "-jar", "cassandra-keyspaces-0.0.1.jar"]
+
+EXPOSE 8080
