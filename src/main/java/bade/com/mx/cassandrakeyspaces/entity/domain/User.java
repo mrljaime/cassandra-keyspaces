@@ -9,13 +9,33 @@ import org.springframework.data.cassandra.core.mapping.Table;
 /**
  * {@link User}
  */
-@Table
+@Table("users")
 public class User {
 
     @PrimaryKeyColumn(name = "id", ordinal = 0, type = PrimaryKeyType.PARTITIONED)
     private String id;
 
-    @Indexed("email")
+    @Column("email")
     private String email;
+
+    public String getId() {
+        return id;
+    }
+
+    public User setId(String id) {
+        this.id = id;
+
+        return this;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public User setEmail(String email) {
+        this.email = email;
+
+        return this;
+    }
 
 }
