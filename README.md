@@ -9,6 +9,7 @@ By default the `src/main/resources/application.properties` file is comment in th
 To run this little example we need the following dependencies:
 * [Docker](https://www.docker.com/)
 * [docker-compose](https://docs.docker.com/compose/)
+* [AWS Keyspaces](https://aws.amazon.com/es/keyspaces/getting-started/?blog-items.sort-by=item.additionalFields.createdDate&blog-items.sort-order=desc)
 
 This project was build to run on localhost dev environments but can be deployed with some modifications 
 in java startup to define some properties about JMV like memory heap, what to do when some critical error ocurred 
